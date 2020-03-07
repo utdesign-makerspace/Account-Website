@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Account</title>
+  </head>
+  <body>
+    <form action={{ postUrl }} method="post">
+        {{#each elements}}
+            <label for={{ elementID }}>{{ label }}:</label>
+            <input type="text" id={{ elementID }} name={{ elementID }}><br>
+            <b>{{ errorMessage }}</b><br>
+        {{/each}}
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
