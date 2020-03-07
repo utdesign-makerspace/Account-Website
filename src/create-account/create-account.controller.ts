@@ -56,6 +56,14 @@ export class CreateAccountController {
             })
         }
         else{
+            //bind to server
+
+            //check for netid in use
+
+            //if in use resend form with 'NetID in use'
+
+            //send email with password
+
             return res.render("succesfulAccountCreation.hbs", {
                 message: 'Your account has succesfully been created.\n' + 
                     'Please check the email attached to your NetID for your random-generated password.',
